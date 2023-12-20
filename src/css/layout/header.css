@@ -12,7 +12,7 @@
 
 .header__end {
   display: flex;
-  gap: var(--space3x);
+  gap: var(--space1x);
 }
 
 .header__logo{
