@@ -1,5 +1,6 @@
 .footer{
     background-color: var(--dark---green);
+    width: 100%;
 }
 
 .footer__start{
