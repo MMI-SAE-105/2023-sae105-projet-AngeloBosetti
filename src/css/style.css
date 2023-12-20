@@ -23,3 +23,4 @@ ordre d'import :
 @import "layout/footer.css";
 
 /* Components */
+@import "component/menu.css";
