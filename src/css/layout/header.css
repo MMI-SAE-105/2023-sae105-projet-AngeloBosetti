@@ -1,3 +1,12 @@
 .header {
-  background-color: black;
+    position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space2x) var(--space3x);
+  display: flex;
+  justify-content: space-between;
 }
+
+
