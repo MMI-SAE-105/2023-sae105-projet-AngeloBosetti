@@ -1,12 +1,23 @@
 .header {
     position: sticky;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
   padding: var(--space2x) var(--space3x);
-  display: flex;
-  justify-content: space-between;
+  
 }
 
+.header__end {
+  display: flex;
+  gap: var(--space3x);
+}
 
+.header__logo{
+  display: block;
+}
+.header__menu-btn {
+  decoration: none;
+}
