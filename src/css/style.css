@@ -1,0 +1,23 @@
+/*   
+ordre d'import :
+  1. les polices via Google Font
+  2. Les libraries (Vendors)
+  3. Les variables (Utils)
+  4. Les règles générales (Base)
+  5. Les règles de composition (Layout)
+  6. Les composant d'interface (Components)
+*/
+
+
+/* Code fourni par Google Font pour l'utilisation de ces polices de caractères */
+
+/* Vendors */
+
+/* Utils */
+
+/* Base */
+
+/* Layout */
+@import "layout/header.css";
+
+/* Components */
