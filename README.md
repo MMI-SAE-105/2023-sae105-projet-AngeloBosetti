@@ -2,7 +2,7 @@
 - NOM : Bosetti
 - PRÉNOM : Angelo
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :https://www.figma.com/file/AKHpXQWrOg6MFIpmD7oO3x/Maquette-Projet-Individuel---Angelo-Bosetti?type=design&node-id=5383%3A3224&mode=design&t=19zDP1tGy8wtQot4-1
 
 # Structure de départ pour le projet individuel.
 
