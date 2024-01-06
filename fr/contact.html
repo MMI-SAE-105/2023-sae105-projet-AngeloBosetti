@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Name:</legend>
+                <input type="text" name="name" id="name" placeholder="Votre nom">
+            </fieldset>
+            <fieldset>
+                <legend>Email:</legend>
+                <input type="email" name="email" id="email" placeholder="votre email">
+            </fieldset>
+            <fieldset>
+                <legend>Message:</legend>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"></textarea>
+            </fieldset>
+            <input type="submit" value="Envoyer" class="form__btn btn">
+        </form>
+    </main>
+</body>
+
+</html>
