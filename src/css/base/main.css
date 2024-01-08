@@ -6,3 +6,11 @@ a{
     text-color: innherit;
 }
 
+h1{
+    font-family: 'OPTICopperplate' ;
+}
+
+p{
+    font-family: 'Avenir_LT_Pro' ;
+    padding: 20px;
+}

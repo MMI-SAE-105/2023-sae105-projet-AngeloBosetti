@@ -30,3 +30,11 @@ ordre d'import :
 @import "component/card.css";
 @import "component/titre.css";
 @import "component/contact.css";
+
+@font-face {
+    font-family:"OPTICopperplate";
+    src: url("../fonts/OPTICopperplate.woff2") format("woff2");}
+
+@font-face {
+    font-family:"Avenir_LT_Pro";
+    src: url("../fonts/Avenir_LT_Pro_35_Light.woff2") format("woff2");}
