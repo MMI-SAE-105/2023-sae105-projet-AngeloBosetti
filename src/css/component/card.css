@@ -1,5 +1,7 @@
 .card{
     item-align: center;
+    margin-left: 10%;
+    margin-right: 10%; 
 }
 
 .card__title{
@@ -7,22 +9,27 @@
 }
 
 .card__img{
-    object-fit: cover;
+    
 }
 
 .card__btn{
     display: flex;
-    width: 90vw;
     align-items: center;
-    margin-left: 30%;
+    background-color: var(--dark---green);
+    margin-left: 20%;
+    margin-right: 20%;
     margin: 0 ;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
 }
 
 .card__btn img {
-    width: 20%;
-    margin-right: 15%;
-    margin-left: 15%;
+    invert: 100%;
+    width: 15%;
+    margin-right: 10px;
+
+
 }
-.card__btn--text{}
+.card__btn--text{
+    color: var(--white);
+}

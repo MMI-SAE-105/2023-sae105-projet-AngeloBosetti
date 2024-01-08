@@ -1,0 +1,27 @@
+.titre{
+    width: 100%;
+    background-color: var(--dark---green);
+}
+
+.titre h1{
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+.titre h5 {
+    color: var(--white);
+    margin-top:-1%;
+    margin-left: 70%;
+
+}
+.replica__icone{
+    display: flex;
+    item-align: center;
+    margin-top: 50%;
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+}
+.replica__iconebloc{
+    margin-left: 50vw;
+}
