@@ -1,11 +1,12 @@
 .header {
-    position: sticky;
+  position: block;
+  background-color: var(--dark---green);
   z-index: 100;
   display: flex;
   justify-content: space-between;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
   padding: var(--space2x) var(--space3x);
   
 }

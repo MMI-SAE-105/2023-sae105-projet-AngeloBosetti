@@ -11,15 +11,18 @@
 }
 
 .card__btn{
-    display: block;
-    width: 80vw;
+    display: flex;
+    width: 90vw;
     align-items: center;
-    margin: 0 auto;
+    margin-left: 30%;
+    margin: 0 ;
     padding: 10px;
     border-radius: 5px;
 }
 
 .card__btn img {
-    width: 30%;
-    margin-right: 10px;
+    width: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
+.card__btn--text{}

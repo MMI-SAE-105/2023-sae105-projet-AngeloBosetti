@@ -5,3 +5,18 @@ a{
     text-decoration: none;
     text-color: innherit;
 }
+
+.titre{
+    width: 100%;
+    background-color: var(--dark---green);
+}
+
+.titre h1{
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+.titre  {
+
+}

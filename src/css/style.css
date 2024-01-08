@@ -12,6 +12,7 @@ ordre d'import :
 /* Code fourni par Google Font pour l'utilisation de ces polices de caractères */
 
 /* Vendors */
+@import "vendors/normalize.css";
 
 /* Utils */
 @import "utils/variables.css";
