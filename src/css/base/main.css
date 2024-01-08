@@ -1,0 +1,7 @@
+.titre{
+    background-color: var(--dark---green);
+}
+a{
+    text-decoration: none;
+    text-color: innherit;
+}

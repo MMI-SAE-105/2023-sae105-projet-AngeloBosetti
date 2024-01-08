@@ -26,3 +26,4 @@ ordre d'import :
 
 /* Components */
 @import "component/menu.css";
+@import "component/card.css";
