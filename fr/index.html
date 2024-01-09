@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"  x-data="{ menuIsOpen: false }">
+<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}" >
 
 <head>
     <meta charset="UTF-8">
@@ -121,17 +121,18 @@
             <a href="/"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg" alt="fleche button">
                     <div class="card__btn--text">EN SAVOIR PLUS</div>
                 </button></a>
-            <div class="card">
-                <h2 class="card__title">Un Réalisateur de Renon</h2>
-                <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
-                <p class="card__texte">Découvrez le film 'La Ligne Verte', une adaptation du livre à succès de Stephen
-                    Kingqui
-                    aconnu un succès sans précédent.</p>
-                <a href="/"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg" alt="fleche button">
-                        <div class="card__btn--text">EN SAVOIR PLUS</div>
-                    </button></a>
+        </article>
+        <article class="card">
+            <h2 class="card__title">Un Réalisateur de Renon</h2>
+            <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
+            <p class="card__texte">Découvrez le film 'La Ligne Verte', une adaptation du livre à succès de Stephen
+                Kingqui aconnu un succès sans précédent.</p>
+            <a href="/"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg" alt="fleche button">
+                    <div class="card__btn--text">EN SAVOIR PLUS</div>
+                </button></a>
         </article>
     </main>
+                
     <footer class="footer">
         <a href="/fr/index.html">
             <img class="footer__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
