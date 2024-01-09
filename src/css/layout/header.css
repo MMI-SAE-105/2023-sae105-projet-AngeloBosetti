@@ -1,14 +1,13 @@
 .header {
   position: block;
   background-color: var(--dark---green);
-  z-index: 100;
+  z-index: 15;
   display: flex;
   justify-content: space-between;
   top: 0;
   left: 0;
   max-width: 100%;
   padding: var(--space2x) var(--space3x);
-  z-index: 100;
 }
 
 .header__end {
@@ -17,8 +16,17 @@
 }
 
 .header__logo{
+  position: relative;
   display: block;
+  z-index: 20;
+
 }
 .header__menu-btn {
+  position: relative;
+  z-index: 20;
   decoration: none;
+}
+
+.header__menu menu{
+  max-width: 100%;
 }

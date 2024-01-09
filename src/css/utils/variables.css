@@ -22,7 +22,8 @@
   --display---btn: 15px;
 
   /* Polices de caractère */
-
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 
   /* Espaces */
   --space1x: 8px;

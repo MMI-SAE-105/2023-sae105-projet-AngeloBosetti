@@ -10,7 +10,7 @@ ordre d'import :
 
 
 /* Code fourni par Google Font pour l'utilisation de ces polices de caractères */
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Roboto+Mono&display=swap');
 /* Vendors */
 @import "vendors/normalize.css";
 

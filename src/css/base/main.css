@@ -1,16 +1,32 @@
 .titre{
     background-color: var(--dark---green);
 }
+
+
 a{
     text-decoration: none;
-    text-color: innherit;
 }
 
 h1{
     font-family: 'OPTICopperplate' ;
 }
 
+q{
+    font-family: 'OPTICopperplate' ;
+    font-size: 24px;
+}
+
 p{
     font-family: 'Avenir_LT_Pro' ;
     padding: 20px;
+}
+
+a{
+    font-family: 'Avenir_LT_Pro' ;
+    padding: 20px;
+}
+h4{
+    font-family: 'Mulish' ;
+    padding: 20px;
+    font-weight: 700;
 }
