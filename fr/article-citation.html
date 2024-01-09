@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Arcticle Citation </title>
 </head>
@@ -35,7 +37,7 @@
                 <li class="menu__item">
                     <span class="menu__span"></span>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item">                 
                     <a class="menu__link" href="/fr/article-film.html">Film</a>
                 </li>
                 <li class="menu__item">
@@ -75,7 +77,9 @@
     <main>
         <div class="titre">
             <h1 class="title">La Puissante Réflexion sur la Mort</h1>
-            <img class="title--icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+            <div class="title__iconebloc">
+                <img class="title__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+            </div>
         </div>
         <p class="chapo">La citation "Nous sommes tous promis à la mort, tous sans exceptions" invite à méditer sur la
             réalité
@@ -108,8 +112,6 @@
             C'est une
             loi de la nature à laquelle personne ne peut échapper.
         </p>
-        <img class="article__img" src="/public/img/John_Cafe_Cine.png" alt="JC Cinema">
-        <h6 class="article__img--description">John Cafe qui regarde un film</h6>
         <h3 class="article__sub-title">Accepter la Réalité de la Mort</h3>
         <p class="article__paragraphe">La signification de cette citation est multiple et complexe. Elle rappelle avant
             tout que la mort est une réalité
@@ -117,6 +119,8 @@
             Accepter
             cette réalité est un pas vers une compréhension plus profonde de la vie elle-même.
         </p>
+        <img class="article__img" src="/public/img/John_Cafe_Cine.png" alt="JC Cinema">
+        <h6 class="article__img--description">John Cafe qui regarde un film</h6>
         <h3 class="article__sub-title">Valoriser la Vie et Chérir Chaque Moment</h3>
         <p class="article__paragraphe">De plus, la citation souligne la valeur de la vie. En nous rappelant que la mort
             est inévitable, elle nous invite à

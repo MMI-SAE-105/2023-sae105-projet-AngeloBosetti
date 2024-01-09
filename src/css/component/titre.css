@@ -6,6 +6,7 @@
     background-color: var(--dark---green);
 }
 
+
 .titre q{
     position: relative;
     item-align: center;
@@ -17,8 +18,27 @@
     color: var(--white);
     margin-top:8%;
     margin-left: 70%;
-
 }
+.title{
+    position: relative;
+    item-align: center;
+    color: var(--white);
+    margin: 10%;
+}
+
+.title__icone{
+    display: flex;
+    item-align: center;
+    margin-top: 50%;
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+}
+
+.title__iconebloc{
+    margin-left: 50%;
+}
+
 .replica__icone{
     display: flex;
     item-align: center;
