@@ -4,6 +4,7 @@
   z-index: 15;
   display: flex;
   justify-content: space-between;
+  align-items: center; 
   top: 0;
   left: 0;
   max-width: 100%;
@@ -18,9 +19,22 @@
 .header__logo{
   position: relative;
   display: block;
+  width: 175px;
+  height:17px;
+  z-index: 20;
+}
+
+.header__langue , h3 {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: 17px;
+  width: 40px;
   z-index: 20;
 
 }
+
 .header__menu-btn {
   display: block;
   position: relative;
@@ -32,6 +46,3 @@
 
 }
 
-.header__menu menu{
-  max-width: 100%;
-}

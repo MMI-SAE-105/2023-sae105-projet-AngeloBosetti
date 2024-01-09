@@ -19,14 +19,11 @@
         </div>
         <div class="header__end">
             <a href="/" class="header__langue">
-                <h3>FR EN</h3>
+                <h5> FR EN</h5>
             </a>
             <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
                 <span class="menu-btn__bar"></span>
             </div>
-            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
-                <span class="menu-btn__bar"></span>
-            </button>
         </div>
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list">
