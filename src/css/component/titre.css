@@ -9,6 +9,7 @@
 
 .titre h1{
     position: relative;
+    text-align: center;
     item-align: center;
     color: var(--white);
     margin-left:10vw;
@@ -22,6 +23,7 @@
 }
 .title{
     position: relative;
+    text-align: center;
     item-align: center;
     color: var(--white);
     margin: 10%;

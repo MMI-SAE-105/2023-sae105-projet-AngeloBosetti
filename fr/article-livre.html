@@ -19,9 +19,14 @@
     
         </div>
         <div class="header__end">
-            <a href="/" class="header__langue">
-                <h5> FR EN</h5>
+            <div class="header__langue"></div>
+            <a href="/" class="header__langue--link">
+                <h5> FR</h5>
             </a>
+            <a href="/" class="header__langue--link">
+                <h5>EN</h5>
+            </a>
+            </div>
             <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
                 <span class="menu-btn__bar"></span>
             </div>
@@ -73,17 +78,22 @@
     </header>
     <main>
         <div class="titre">
-            <h1 class="title">Un Roman Inévitable de Stephen King</h1>
-            <img class="title--icone" src="../public/icones/arrow_down.svg" alt="arrow down">
-            <p class="chapo">Plongez dans l'univers fascinant de "La Ligne Verte," le chef-d'œuvre littéraire de Stephen
+            <div class="titre">
+                <h1 class="title">Un Roman Inévitable de Stephen King</h1>
+                <div class="replica__iconebloc">
+                    <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+                </div>
+            </div>
+        </div>
+        <p class="chapo">Plongez dans l'univers fascinant de "La Ligne Verte," le chef-d'œuvre littéraire de Stephen
                 King. À travers des thèmes
                 universels tels que la rédemption, la compassion et la justice, ce roman explore la complexité de l'âme
                 humaine.
                 Découvrez comment l'auteur maître du suspense tisse une histoire captivante qui nous pousse à réfléchir
                 sur l'essence de
                 notre humanité.
-            </p>
-        </div>
+        </p>
+        
         <h3 class="article__sub-title">Une Plongée dans l'univers carcéral de 1932 en Louisiane</h3>
         <p class="article__paragraphe">"La Ligne Verte" est un roman incontournable de la littérature fantastique,
             publié en 1996 par le célèbre écrivain
