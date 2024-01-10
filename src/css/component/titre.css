@@ -7,16 +7,15 @@
 }
 
 
-.titre q{
+.titre h1{
     position: relative;
     item-align: center;
-    font-size: 24px;
     color: var(--white);
-    margin: 10%;
+    margin-left:10vw;
 }
 .titre h5 {
     position: relative;
-    color: var(--white);
+    color: var(--gray);
     font-size: 13px;
     margin-top:8%;
     margin-left: 70%;

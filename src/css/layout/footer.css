@@ -13,7 +13,7 @@
 .footer__logo{
     position: relative;
     padding: 16px;
-    width: 80vw;
+    width: 40vw;
     height: 80%;
 }
 
@@ -42,14 +42,90 @@
 
 .footer__link{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     color: inherit;
-    color: var(--white);
     padding: 10px;
+    margin-left: 10%;
 }
 
 .footer span {
     color: white;
     border: 3px solid white;
     width: 100px;
+}
+
+.footer__item{
+    color: var(--white);
+    
+}
+
+.footer__email , .footer__tel , .footer__adresse{
+    color: var(--gray);
+    font-family: var('Mulish');
+    font-size: var(--display---btn);
+    padding: 0px;
+    margin: 6px;
+    margin-left: 35px;
+}
+
+.footer__title{
+    color: var(--gray);
+    font-family: var('Mulish');
+    font-weight: 700;
+    font-size: var(--text--xl);
+    margin-left: -18px;
+}
+
+.footer__h4{
+    color: var(--gray);
+    font-family: var('Mulish');
+    font-weight: 700;
+    margin: 0px;
+    font-size: var(--text--xl);
+}
+
+
+.reseaux__list{
+    margin: 2%;
+    margin-left: 8%;
+    padding: 1%;
+}
+
+.reseaux__item {
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    margin-bottom: 10%;
+    padding: 0%;
+}
+
+.footer__span {
+    padding:0%;
+    position: absolute;
+    decoration: none;
+    border: -3px; 
+    background-color: var(--white);
+    height: 2px;
+    width: 100vw;
+    margin-left: 4%;
+}
+
+.footer__coryright{
+    display: flex;
+    item-align: row;
+    
+}
+
+.footer__copy{
+    color: var(--gray);
+    padding: 0%;
+    margin-left: 5%;
+    text-size: var(--text--xs); 
+}
+
+.footer__mmi{
+    font-size: var(--text--xs);
+    padding: 0%;
+    max-width: 20vw;
+    margin-right: 5%;  
 }
