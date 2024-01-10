@@ -1,0 +1,25 @@
+
+.form{
+    posiition: relative;
+    decoration: none;
+    background-color: var(--dark---green);
+}
+
+.fieldset{
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.legend{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.form__btn {
+    position: relative;
+    margin-left: 37.5vw;
+}
