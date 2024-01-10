@@ -119,7 +119,9 @@
 .footer__copy{
     color: var(--gray);
     padding: 0%;
+    margin: 0%;
     margin-left: 5%;
+    margin-bottom: 6%;
     text-size: var(--text--xs); 
 }
 

@@ -144,9 +144,8 @@
             les amoureux de récits poignants et</p>
         <h3 class="carrousel_title">La liste des livres de Stephen King</h3>
         <article>
-            <div class="work" x-data="{hrefCourant:'#ecran-1',}">
-                    <div class="carrousel_parent-ecrans" x-ref="parent"
-                        @scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div class="">
+                    <div class="frise__image">
                         <div id="ecran-1" class="carrousel_ecran">
                             <figure>
                                 <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
@@ -178,14 +177,8 @@
                             </figure>
                         </div>
                     </div>
-                    <ul class="caroussel_liste-liens">
-                        <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">ecran 1</a></li>
-                        <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">ecran 2</a></li>
-                        <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">ecran 3</a></li>
-                        <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">ecran 4</a></li>
-                        <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">ecran 5</a></li>
-                    </ul>
-        </div>
+                </div>
+            </article>
     </main>
     <footer class="footer">
         <a href="/fr/index.html">
@@ -194,7 +187,7 @@
         <div class="footer__list">
             <ul class="footer__list--1">
                 <li class="footer__item">
-                    <h4 class="footer_title">Articles</h4>
+                    <h4 class="footer__title">Articles</h4>
                 </li>
                 <li class="footer__item">
                 </li>
@@ -216,7 +209,7 @@
             </ul>
             <ul class="footer__list--2">
                 <li class="footer__item">
-                    <h4 class="footer_title">Informations</h4>
+                    <h4 class="footer__title">Informations</h4>
                 </li>
     
                 <li class="footer__item">
@@ -237,19 +230,22 @@
         <p class="footer__tel">03 81 99 47 34</p>
         <p class="footer__email">angelo.bsti25@gmail.com</p>
         <div class="footer__reseaux">
-            <h4 class="">NOUS SUIVRE</h4>
+            <h4 class="footer__h4">NOUS SUIVRE</h4>
             <ul class="reseaux__list">
-                <li class="reseaux__item"><img src="../public/icones/icon_facebook.svg" alt="logo facebook"></li>
-                <li class="reseaux__item"><img src="../public/icones/icon_instagram.svg" alt="logo facebook"></li>
-                <li class="reseaux__item"><img src="../public/icones/icon_youtube.svg" alt="logo facebook"></li>
+                <li class="reseaux__item"><a href="https://www.facebook.com/dmalsot?locale=fr_FR"><img
+                            src="../public/icones/icon_facebook_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.instagram.com/iseeyou_officiel/"><img
+                            src="../public/icones/icon_instagram_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.youtube.com/@departementmmi4128"><img
+                            src="../public/icones/icon_youtube_gris.svg" alt="logo facebook"></a></li>
             </ul>
         </div>
-        <span class="footer__span"></span>
-        <p class="footer__copy">
-            projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
-        </p>
-        <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
-    
+        <div class="footer__coryright">
+            <p class="footer__copy">
+                projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+            </p>
+            <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
+        </div>
     </footer>
 </body>
 
