@@ -142,9 +142,62 @@
             large, confirmant ainsi sa place parmi les classiques de la littérature et du cinéma. Une œuvre à ne pas
             manquer pour
             les amoureux de récits poignants et</p>
-        <img class="article__img" src="/" alt="">
-        <h6 class="article__img--description">Lorem</h6>
+        <h3 class="carrousel_title">La liste des livres de Stephen King</h3>
+        <article>
+            <div class="work" x-data="{hrefCourant:'#ecran-1',}">
+                <button @click="parent = $refs.parent,parent.scrollLeft -= parent.clientWidth"
+                    class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
+                </button><button @click="parent = $refs.parent,parent.scrollLeft += parent.clientWidth"
+                    class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+                <div class="carrousel_parent-ecrans" x-ref="parent"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
         
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
+            <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
+                aria-label="slide précedant">
+                << /button><button @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth"
+                        class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+                    <div class="carrousel_parent-ecrans" x-ref="parent"
+                        @scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
+                                <figcaption>Ecran 1</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
+                                <figcaption>Ecran 2</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
+                                <figcaption>Ecran 3</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
+                                <figcaption>Ecran 4</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
+                                <figcaption>Ecran 5</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <ul class="caroussel_liste-liens">
+                        <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">ecran 1</a></li>
+                        <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">ecran 2</a></li>
+                        <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">ecran 3</a></li>
+                        <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">ecran 4</a></li>
+                        <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">ecran 5</a></li>
+                    </ul>
+        </div>
     </main>
     <footer class="footer">
         <a href="/fr/index.html">
