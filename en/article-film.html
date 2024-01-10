@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -11,164 +11,154 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__start">
-            <a href="/fr/index.html">
-                <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
-            </a>
-    
-        </div>
-        <div class="header__end">
-            <div class="header__langue"></div>
-            <a href="/" class="header__langue--link">
-                <h5> FR</h5>
-            </a>
-            <a href="/" class="header__langue--link">
-                <h5>EN</h5>
-            </a>
-        </div>
-        </a>
-        <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
-            <span class="menu-btn__bar"></span>
-        </div>
-        </div>
-        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <h4 class="menu_titre">Articles</h4>
-                </li>
-                <li class="menu__item">
-                    <span class="menu__span"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/article-film.html">Film</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/article-livre.html">Livre</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/article-musique.html">Musique</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/article-citation.html">Citation</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/article-realisateur.html">Réalisateur</a>
-                </li>
-                <li class="menu__item">
-                    <h4 class="menu_titre">Informations</h4>
-                </li>
-                <li class="menu__item">
-                    <span class="menu__span"></span>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/contact.html">Contact</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/autres-projets.html">Autres Projets</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/about.html">à Propos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
-                </li>
-            </ul>
-        </nav>
-    
-    </header>
     <main>
+        <header class="header">
+            <div class="header__start">
+                <a href="/fr/index.html">
+                    <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg"
+                        alt="Logo The Long Line">
+                </a>
+
+            </div>
+            <div class="header__end">
+                <div class="header__langue"></div>
+                <a href="/" class="header__langue--link">
+                    <h5> FR</h5>
+                </a>
+                <a href="/" class="header__langue--link">
+                    <h5>EN</h5>
+                </a>
+            </div>
+            </a>
+            <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+                <span class="menu-btn__bar"></span>
+            </div>
+            </div>
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <h4 class="menu_titre">Articles</h4>
+                    </li>
+                    <li class="menu__item">
+                        <span class="menu__span"></span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/article-film.html">Movie</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/article-livre.html">Book</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/article-musique.html">Music</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/article-citation.html">Quote</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/article-realisateur.html">Director</a>
+                    </li>
+                    <li class="menu__item">
+                        <h4 class="menu_titre">Informations</h4>
+                    </li>
+                    <li class="menu__item">
+                        <span class="menu__span"></span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/contact.html">Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/autres-projets.html">Other Projets</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/about.html">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/glossaire.html">Glossary</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
         <div class="titre">
-            <h1 class="title">Un Voyage dans l'âme</h1>
+            <h1 class="title">A Journey into the Soul</h1>
             <div class="replica__iconebloc">
                 <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
             </div>
         </div>
-            <p class="chapo">Explorez le chef-d'œuvre cinématographique "La Ligne Verte" et plongez au cœur des thèmes
-                universels de la mort, de la
-                justice, de la rédemption, et de la compassion, qui défient les conventions et interrogent la nature
-                humaine.
-        </div>
-        </p>
-        <h3 class="article__sub-title">Au Cœur de l'Amérique des Années 1930</h3>
-        <p class="article__paragraphe">Dans le contexte de l'Amérique des années 1930, marquée par la pauvreté et la
-            violence, le film se déroule au Cold
-            Mountain, un pénitencier imposant. Au centre de cette histoire captivante se trouve Paul Edgecomb,
-            gardien-chef du
-            couloir de la mort d'une prison de Louisiane.
-        </p>
+        <p class="chapo">Explore the cinematic masterpiece "The Green Mile" and delve into the universal themes of
+            death,
+            justice, redemption, and compassion, challenging conventions and questioning human nature.</p>
+        <h3 class="article__sub-title">In the Heart of 1930s America</h3>
+        <p class="article__paragraphe">Set against the backdrop of 1930s America, marked by poverty and violence, the
+            film
+            unfolds at Cold Mountain, an imposing penitentiary. At the center of this captivating story is Paul
+            Edgecomb, the
+            chief guard of the death row at a prison in Louisiana.</p>
         <img class="article__img" src="/public/img/Paul_Edgecomb.png" alt="Paul Edgecomb">
-        <h6 class="article__img--description">Visage de Paul Edgecomb</h6>
-        <h3 class="article__sub-title">Le Début Troublant de l'Histoire</h3>
-        <p class="article__paragraphe">L'histoire commence par la condamnation à mort de John Coffey, un colosse accusé
-            du viol et du meurtre de deux
-            fillettes. Paul, convaincu de la culpabilité de John, est cependant troublé par son comportement doux et
-            timide. C'est à
-            ce moment que les événements prennent une tournure extraordinaire.
-        </p>
-        <img class="article__img" src="/public/img/870x489_cafe_2_garde.png" alt="John cafe et gardes">
-        <h6 class="article__img--description">John Cafe entourer par deux gardes</h6>
+        <h6 class="article__img--description">Face of Paul Edgecomb</h6>
+        <h3 class="article__sub-title">The Troubling Beginning of the Story</h3>
+        <p class="article__paragraphe">The story begins with the death sentence of John Coffey, a giant accused of
+            raping and
+            murdering two little girls. Paul, convinced of John's guilt, is nevertheless troubled by his gentle and shy
+            demeanor. It is at this moment that events take an extraordinary turn.</p>
+        <img class="article__img" src="/public/img/870x489_cafe_2_garde.png" alt="John coffee and guards">
+        <h6 class="article__img--description">John Coffee surrounded by two guards</h6>
 
-        <h3 class="article__sub-title">Des Pouvoirs de Guérison Inexpliqués</h3>
-        <p class="article__paragraphe">Paul découvre que John possède des pouvoirs de guérison inexpliqués, défiant les
-            lois de la médecine et de la nature.
-            Alors que Paul commence à douter de la culpabilité de John, le fil conducteur du doute et de la complexité
-            morale se
-            tisse tout au long du film.
-        </p>
-        <img class="article__img" src="/public/img/Paul_John_Magie.png" alt="John Paul Magie">
-        <h6 class="article__img--description">John Cafe qui Aide Paul avec sa magie</h6>
-        <h3 class="article__sub-title">Culpabilité et Complexité Morale</h3>
-        <p class="article__paragraphe">La question de la culpabilité devient le fil rouge du récit, incitant à réfléchir
-            sur la complexité de la vie et des
-            choix que nous faisons. "La Ligne Verte" démontre qu'il n'y a pas de réponses faciles aux questions
-            difficiles,
-            soulignant que la réalité peut différer de nos perceptions.
-        </p>
-        <h3 class="article__sub-title">La Référence à Jésus-Christ et les Valeurs Universelles</h3>
-        <p class="article__paragraphe">Un élément notable est la référence implicite à la figure de Jésus-Christ. John
-            Coffey, condamné à mort comme Jésus,
-            exhibe des dons de guérison rappelant les miracles attribués à Jésus dans les écritures religieuses. Cette
-            analogie
-            suggère que John, malgré sa condamnation, incarne des valeurs de compassion, de rédemption et d'amour
-            universelles.
-        </p>
-        <img class="article__img" src="/public/img/John_Garde_Fin.png" alt="John et garde Fin">
-        <h6 class="article__img--description">John Cafe marchant dans le couloir de la mort entourer de gardes</h6>
-        <h3 class="article__sub-title">Le Poids de la Culpabilité et la Décision Poignante</h3>
-        <p class="article__paragraphe">À la fin du film, Paul propose à John de s'évader pour échapper à son exécution,
-            mais John choisit de ne pas fuir,
-            mettant fin à ses souffrances. Cette décision souligne la complexité du poids de la culpabilité, montrant
-            que la
-            rédemption et le pardon sont des notions profondément humaines.
-        </p>
-        <p class="article__paragraphe">En somme, "La Ligne Verte" est un chef-d'œuvre cinématographique qui confronte à
-            des dilemmes moraux et à la puissance
-            de la compassion. Il nous rappelle que la vie est imprévisible, que la justice n'est pas toujours juste, et
-            que la
-            rédemption est une aspiration profondément humaine. À travers les yeux de Paul Edgecomb et de John Coffey,
-            ce film
-            enseigne que parfois, les réponses ne se trouvent pas dans les lois, mais dans les cœurs compatissants.</p>
+        <h3 class="article__sub-title">Unexplained Healing Powers</h3>
+        <p class="article__paragraphe">Paul discovers that John possesses unexplained healing powers, defying the laws
+            of
+            medicine and nature. As Paul begins to doubt John's guilt, the thread of doubt and moral complexity weaves
+            throughout the film.</p>
+        <img class="article__img" src="/public/img/Paul_John_Magic.png" alt="John Paul Magic">
+        <h6 class="article__img--description">John Coffee helping Paul with his magic</h6>
+        <h3 class="article__sub-title">Guilt and Moral Complexity</h3>
+        <p class="article__paragraphe">The question of guilt becomes the red thread of the narrative, prompting
+            reflection on
+            the complexity of life and the choices we make. "The Green Mile" demonstrates that there are no easy answers
+            to
+            difficult questions, highlighting that reality may differ from our perceptions.</p>
+        <h3 class="article__sub-title">Reference to Jesus Christ and Universal Values</h3>
+        <p class="article__paragraphe">A notable element is the implicit reference to the figure of Jesus Christ. John
+            Coffey,
+            sentenced to death like Jesus, exhibits healing gifts reminiscent of the miracles attributed to Jesus in
+            religious
+            scriptures. This analogy suggests that John, despite his condemnation, embodies values of compassion,
+            redemption,
+            and universal love.</p>
+        <img class="article__img" src="/public/img/John_Guard_End.png" alt="John and guard End">
+        <h6 class="article__img--description">John Coffee walking in the death row corridor surrounded by guards</h6>
+        <h3 class="article__sub-title">The Weight of Guilt and the Poignant Decision</h3>
+        <p class="article__paragraphe">At the end of the film, Paul offers John the opportunity to escape his execution,
+            but
+            John chooses not to flee, putting an end to his suffering. This decision underscores the complexity of the
+            weight of
+            guilt, showing that redemption and forgiveness are deeply human concepts.</p>
+        <p class="article__paragraphe">In conclusion, "The Green Mile" is a cinematic masterpiece that confronts moral
+            dilemmas
+            and the power of compassion. It reminds us that life is unpredictable, justice is not always just, and
+            redemption is
+            a profoundly human aspiration. Through the eyes of Paul Edgecomb and John Coffey, this film teaches us that
+            sometimes, the answers are not found in laws but in compassionate hearts.</p>
         <div class="galerie">
             <article>
                 <div class="frise__film">
-                    <h2 class="frise_title">Les autre film de Frank Darabont</h2>
+                    <h2 class="frise_title">Other Films by Frank Darabont</h2>
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
-                            <img class="livre__image" src="/public/img/film-evade.webp" alt="image ecran 1">
-                            <h4 class="livre__titre">Les Évadés - 1994</h4>
+                            <img class="livre__image" src="/public/img/film-escape.webp" alt="image screen 1">
+                            <h4 class="livre__titre">The Shawshank Redemption - 1994</h4>
                         </figure>
                     </div>
                     <div id="ecran-2" class="carrousel_ecran">
                         <figure>
-                            <img class="livre__image" src="/public/img/film-TheMist.webp" alt="image ecran 2">
+                            <img class="livre__image" src="/public/img/film-TheMist.webp" alt="image screen 2">
                             <h4 class="livre__titre">The Mist - 2007</h4>
                         </figure>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <figure>
-                            <img class="livre__image" src="/public/img/film-mob_city.webp" alt="image ecran 3">
-                            <h4 class="livre__titre">MMob City - 2013</h4>
+                            <img class="livre__image" src="/public/img/film-mob_city.webp" alt="image screen 3">
+                            <h4 class="livre__titre">Mob City - 2013</h4>
                         </figure>
                     </div>
                 </div>
@@ -177,20 +167,20 @@
                 <div class="frise__film">
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
-                            <img class="livre__image" src="/public/img/film-The-majestic.webp" alt="image ecran 1">
+                            <img class="livre__image" src="/public/img/film-The-majestic.webp" alt="image screen 1">
                             <h4 class="livre__titre">The Majestic - 2001</h4>
                         </figure>
                     </div>
                     <div id="ecran-2" class="carrousel_ecran">
                         <figure>
-                            <img class="livre__image" src="/public/img/film-the-walking-dead.webp" alt="image ecran 2">
+                            <img class="livre__image" src="/public/img/film-the-walking-dead.webp" alt="image screen 2">
                             <h4 class="livre__titre">The Walking Dead - 2010</h4>
                         </figure>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <figure>
-                            <img class="livre__image" src="/public/img/film-la-mouche.jpg" alt="image ecran 3">
-                            <h4 class="livre__titre">La Mouche 2 - 1989</h4>
+                            <img class="livre__image" src="/public/img/film-la-mouche.jpg" alt="image screen 3">
+                            <h4 class="livre__titre">The Fly 2 - 1989</h4>
                         </figure>
                     </div>
                 </div>
@@ -198,7 +188,7 @@
         </div>
     </main>
     <footer class="footer">
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img class="footer__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
         </a>
         <div class="footer__list">
@@ -209,61 +199,49 @@
                 <li class="footer__item">
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/article-film.html">Film</a>
+                    <a class="footer__link" href="/en/article-film.html">Movie</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/article-livre.html">Livre</a>
+                    <a class="footer__link" href="/en/article-livre.html">Book</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/article-musique.html">Musique</a>
+                    <a class="footer__link" href="/en/article-musique.html">Music</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/article-citation.html">Citation</a>
+                    <a class="footer__link" href="/en/article-citation.html">Citation</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                    <a class="footer__link" href="/en/article-realisateur.html">Director</a>
                 </li>
             </ul>
             <ul class="footer__list--2">
                 <li class="footer__item">
                     <h4 class="footer__title">Informations</h4>
                 </li>
-            
+
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/contact.html">Contact</a>
+                    <a class="footer__link" href="/en/contact.html">Contact</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/autres-projets.html">Autres Projets</a>
+                    <a class="footer__link" href="/en/autres-projets.html">Other Projets</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/about.html">à Propos</a>
+                    <a class="footer__link" href="/en/about.html">About</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                    <a class="footer__link" href="/en/glossaire.html">Glossary</a>
                 </li>
-            </ul>
-        </div>
-        <p class="footer__adresse">4 PI. Lucien Tharradin, 25200 Montbéliard</p>
-        <p class="footer__tel">03 81 99 47 34</p>
-        <p class="footer__email">angelo.bsti25@gmail.com</p>
-        <div class="footer__reseaux">
-            <h4 class="footer__h4">NOUS SUIVRE</h4>
-            <ul class="reseaux__list">
-                <li class="reseaux__item"><a href="https://www.facebook.com/dmalsot?locale=fr_FR"><img
-                            src="../public/icones/icon_facebook_gris.svg" alt="logo facebook"></a></li>
-                <li class="reseaux__item"><a href="https://www.instagram.com/iseeyou_officiel/"><img
-                            src="../public/icones/icon_instagram_gris.svg" alt="logo facebook"></a></li>
-                <li class="reseaux__item"><a href="https://www.youtube.com/@departementmmi4128"><img
-                            src="../public/icones/icon_youtube_gris.svg" alt="logo facebook"></a></li>
             </ul>
         </div>
         <div class="footer__coryright">
             <p class="footer__copy">
-                projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+                Project carried out as part of an educational exercise at the MMi department of Montbéliard.
             </p>
             <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
         </div>
     </footer>
 </body>
+
+</html>
 
 </html>
