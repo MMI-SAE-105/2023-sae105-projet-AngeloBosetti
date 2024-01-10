@@ -1,0 +1,14 @@
+.galerie{
+    display: row;
+}
+
+.frise__film{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

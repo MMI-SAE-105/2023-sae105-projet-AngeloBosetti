@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Arcticle Citation </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+            </a>
+    
+        </div>
+        <div class="header__end">
+            <div class="header__langue"></div>
+            <a href="/" class="header__langue--link">
+                <h5> FR</h5>
+            </a>
+            <a href="/" class="header__langue--link">
+                <h5>EN</h5>
+            </a>
+        </div>
+        </a>
+        <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+            <span class="menu-btn__bar"></span>
+        </div>
+        </div>
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <h4 class="menu_titre">Articles</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+                <li class="menu__item">
+                    <h4 class="menu_titre">Informations</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main>
+        <div class="titre">
+            <h1 class="title">La Puissante Réflexion sur la Mort</h1>
+            <div class="replica__iconebloc">
+                <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+            </div>
+        </div>
+        <p class="chapo">La citation "Nous sommes tous promis à la mort, tous sans exceptions" invite à méditer sur la
+            réalité
+            inéluctable de la
+            mortalité. Cette réflexion profonde nous rappelle la fragilité de la vie et l'importance de vivre chaque
+            instant
+            avec
+            gratitude. Découvrez comment cette phrase, en apparence simple, éveille une profonde introspection sur
+            l'existence
+            humaine et son inévitable destin.
+        </p>
+        <h3 class="article__sub-title">La Signification Profonde de la Citation</h3>
+        <p class="article__paragraphe">La citation "Nous sommes tous promis à la mort, tous sans exceptions" est une
+            phrase d'une profondeur incontestable qui
+            nous invite à méditer sur l'une des réalités les plus inévitables de l'existence humaine : la mort. Cette
+            citation, en
+            apparence simple, porte en elle une signification riche et diverse, ouvrant la porte à une réflexion
+            profonde sur la
+            vie, la mort et la valeur de chaque moment que nous vivons.
+        </p>
+        <video width="100%" height="auto" controls>
+            <source src="/public/video/la-ligne-verte-Laligne-verte-semble-bien-longue (2).mp4" type="video/mp4" />
+        </video>
+        <h3 class="article__sub-title">Plusieurs Perspectives sur la Mort</h3>
+        <p class="article__paragraphe">L'interprétation de cette citation peut être abordée sous plusieurs angles,
+            chacun offrant une perspective unique sur le
+            sujet de la mortalité. D'un point de vue littéral, la phrase rappelle de manière incontestable que la mort
+            est une
+            réalité incontournable pour tous les êtres vivants, qu'il s'agisse d'êtres humains, d'animaux ou de plantes.
+            C'est une
+            loi de la nature à laquelle personne ne peut échapper.
+        </p>
+        <h3 class="article__sub-title">Accepter la Réalité de la Mort</h3>
+        <p class="article__paragraphe">La signification de cette citation est multiple et complexe. Elle rappelle avant
+            tout que la mort est une réalité
+            incontournable de l'existence. Chacun d'entre nous, sans exception, sera confronté à ce moment inéluctable.
+            Accepter
+            cette réalité est un pas vers une compréhension plus profonde de la vie elle-même.
+        </p>
+        <img class="article__img" src="/public/img/John_Cafe_Cine.png" alt="JC Cinema">
+        <h6 class="article__img--description">John Cafe qui regarde un film</h6>
+        <h3 class="article__sub-title">Valoriser la Vie et Chérir Chaque Moment</h3>
+        <p class="article__paragraphe">De plus, la citation souligne la valeur de la vie. En nous rappelant que la mort
+            est inévitable, elle nous invite à
+            apprécier la préciosité de chaque moment. La vie devient une ressource rare et limitée, ce qui renforce
+            l'importance de
+            vivre pleinement, de cultiver des relations significatives et de poursuivre nos aspirations.
+        </p>
+        <h3 class="article__sub-title">La Mort comme Passage et Transformation</h3>
+        <p class="article__paragraphe">Enfin, la citation peut être interprétée comme une invitation à considérer la
+            mort comme un passage, un élément naturel
+            du cycle de la vie. Elle n'est pas la fin, mais plutôt un changement vers une autre forme d'existence. Cette
+            perspective
+            peut apporter du réconfort à ceux qui sont confrontés à la perte d'un être cher.
+        </p>
+        <img class="article__img" src="/public/img/John_Paul_Tete_Vert.png" alt="">
+        <h6 class="article__img--description">montage </h6>
+        <h3 class="article__sub-title">Impact Profond et Invitation à la Réflexion</h3>
+        <p class="article__paragraphe">L'impact de cette citation est profond. Elle peut nous amener à réfléchir à la
+            manière dont nous vivons notre vie, à
+            l'importance de nos relations et à la valeur que nous accordons aux moments que nous vivons. Elle peut
+            également nous
+            aider à accepter la perte de nos proches, en nous rappelant que la mort est inévitable pour tous.
+        </p>
+        <h3 class="article__sub-title">Une Sagesse Profonde</h3>
+        <p class="article__paragraphe">En conclusion, la citation "Nous sommes tous promis à la mort, tous sans
+            exceptions" est une phrase d'une profonde
+            sagesse. Elle nous encourage à réfléchir à la nature de la vie et de la mort, à apprécier la préciosité de
+            chaque moment
+            et à accepter la réalité inévitable de la mortalité. Elle nous rappelle que la vie est un cadeau précieux, à
+            savourer
+            pleinement.
+        </p>
+
+    </main>
+    <footer class="footer">
+        <a href="/fr/index.html">
+            <img class="footer__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+        </a>
+        <div class="footer__list">
+            <ul class="footer__list--1">
+                <li class="footer__item">
+                    <h4 class="footer__title">Articles</h4>
+                </li>
+                <li class="footer__item">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+            </ul>
+            <ul class="footer__list--2">
+                <li class="footer__item">
+                    <h4 class="footer__title">Informations</h4>
+                </li>
+    
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.google.fr/maps/search/4+PI.+Lucien+Tharradin,+25200+Montb%C3%A9liard/@47.4950284,6.8035451,18z/data=!3m1!4b1?entry=ttu"><p class="footer__adresse">4 PI. Lucien Tharradin, 25200 Montbéliard</p></a>
+        <p class="footer__tel">03 81 99 47 34</p>
+        <p class="footer__email">angelo.bsti25@gmail.com</p>
+        <div class="footer__reseaux">
+            <h4 class="footer__h4">NOUS SUIVRE</h4>
+            <ul class="reseaux__list">
+                <li class="reseaux__item"><a href="https://www.facebook.com/dmalsot?locale=fr_FR"><img
+                            src="../public/icones/icon_facebook_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.instagram.com/iseeyou_officiel/"><img
+                            src="../public/icones/icon_instagram_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.youtube.com/@departementmmi4128"><img
+                            src="../public/icones/icon_youtube_gris.svg" alt="logo facebook"></a></li>
+            </ul>
+        </div>
+        <div class="footer__coryright">
+            <p class="footer__copy">
+                projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+            </p>
+            <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
+        </div>
+    </footer>
+</body>
+</html>

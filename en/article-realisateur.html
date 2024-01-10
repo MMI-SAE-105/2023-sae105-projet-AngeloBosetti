@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Article Realisateur </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+            </a>
+    
+        </div>
+        <div class="header__end">
+            <div class="header__langue"></div>
+            <a href="/" class="header__langue--link">
+                <h5> FR</h5>
+            </a>
+            <a href="/" class="header__langue--link">
+                <h5>EN</h5>
+            </a>
+        </div>
+        </a>
+        <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+            <span class="menu-btn__bar"></span>
+        </div>
+        </div>
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <h4 class="menu_titre">Articles</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+                <li class="menu__item">
+                    <h4 class="menu_titre">Informations</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main>
+        <div class="titre">
+            <h1 class="title">Un Réalisateur Incroyable: Frank Darabont</h1>
+            <div class="replica__iconebloc">
+                <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+            </div>
+        </div>
+        <p class="chapo">Découvrez le talent de Frank Darabont, réalisateur emblématique derrière l'adaptation
+            cinématographique acclamée de "La
+            Ligne Verte". De ses débuts en tant que scénariste à sa capacité exceptionnelle d'adapter les œuvres de
+            Stephen King,
+            Darabont a marqué l'industrie cinématographique par son style visuel unique. Plongez dans la carrière de
+            ce maître du
+            suspense qui a su captiver les émotions du public à travers ses films mémorables.
+        </p>
+        <h3 class="article__sub-title">Un Homme aux Multiples Facettes</h3>
+        <p class="article__paragraphe">Frank Darabont, ce nom évoque incontestablement un talent dans l'industrie
+            cinématographique. Réalisateur, scénariste,
+            producteur, compositeur et acteur, Darabont a conquis le monde du cinéma avec son style distinctif et sa
+            capacité à
+            donner vie aux romans de Stephen King sur grand écran.</p>
+        <h3 class="article__sub-title">Débuts et Premiers Succès</h3>
+        <p class="article__paragraphe">Né le 28 janvier 1959 à Montbéliard, en France, Frank Darabont a commencé sa
+            carrière en tant que scénariste. Il a écrit
+            des épisodes pour des séries télévisées à succès, notamment "Les Contes de la Crypte" et "Les Sœurs
+            Reed". Cependant, il
+            a rapidement fait ses débuts en tant que réalisateur avec un premier film documentaire intitulé "La
+            Marche de
+            l'empereur" en 1994, qui a remporté l'Oscar du meilleur film documentaire. Cette réalisation a marqué le
+            début d'une
+            carrière cinématographique exceptionnelle.</p>
+        <h3 class="article__sub-title">Les Évadés: Un Tournant Majeur</h3>
+        <p class="article__paragraphe">Le tournant majeur dans la carrière de Darabont est survenu avec son
+            adaptation du roman de Stephen King, "Les Évadés"
+            en 1994. Ce film a été un succès critique et commercial, nominé pour deux Oscars, et a établi Darabont
+            comme un
+            réalisateur de renom. Son talent pour donner vie aux personnages de King à l'écran a impressionné à la
+            fois les fans de
+            l'auteur et les critiques.</p>
+        <h3 class="article__sub-title">La Ligne Verte: Une Autre Réussite Éclatante</h3>
+        <p class="article__paragraphe">En 1999, Darabont a réalisé une autre adaptation de Stephen King, "La Ligne
+            Verte". Ce film a été acclamé à la fois par
+            la critique et le public, devenant un succès majeur. Nominé pour quatre Oscars, dont celui du meilleur
+            film, il a
+            confirmé le statut de Darabont en tant que maître de l'adaptation cinématographique.
+        </p>
+        <h3 class="article__sub-title">Style Visuel Distinctif</h3>
+        <p class="article__paragraphe">Un élément clé du succès de Frank Darabont réside dans son style visuel
+            distinctif. Il a un don pour créer des
+            atmosphères sombres et oppressantes qui suscitent le suspense et l'angoisse, comme on peut le voir dans
+            "Les Évadés" et
+            "La Ligne Verte". Sa capacité à plonger les spectateurs dans des mondes inquiétants est incontestable.
+        </p>
+        <h3 class="article__sub-title">Un Héritage Cinématographique Durable</h3>
+        <p class="article__paragraphe">En fin de compte, Frank Darabont est un artiste polyvalent dont la
+            contribution à l'industrie cinématographique ne peut
+            être sous-estimée. Ses réalisations notables, en particulier ses adaptations de Stephen King, resteront
+            à jamais gravées
+            dans l'histoire du cinéma. Le réalisateur, scénariste, producteur, compositeur et acteur d'origine
+            hongroise a laissé
+            une empreinte indélébile dans le monde du cinéma, et son héritage se perpétuera à travers les
+            générations de cinéphiles.</p>
+        <img class="article__img" src="/" alt="">
+        <h6 class="article__img--description">Lorem</h6>
+    </main>
+    <footer class="footer">
+        <a href="/fr/index.html">
+            <img class="footer__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+        </a>
+        <div class="footer__list">
+            <ul class="footer__list--1">
+                <li class="footer__item">
+                    <h4 class="footer__title">Articles</h4>
+                </li>
+                <li class="footer__item">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+            </ul>
+            <ul class="footer__list--2">
+                <li class="footer__item">
+                    <h4 class="footer__title">Informations</h4>
+                </li>
+            
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer__adresse">4 PI. Lucien Tharradin, 25200 Montbéliard</p>
+        <p class="footer__tel">03 81 99 47 34</p>
+        <p class="footer__email">angelo.bsti25@gmail.com</p>
+        <div class="footer__reseaux">
+            <h4 class="footer__h4">NOUS SUIVRE</h4>
+            <ul class="reseaux__list">
+                <li class="reseaux__item"><a href="https://www.facebook.com/dmalsot?locale=fr_FR"><img
+                            src="../public/icones/icon_facebook_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.instagram.com/iseeyou_officiel/"><img
+                            src="../public/icones/icon_instagram_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.youtube.com/@departementmmi4128"><img
+                            src="../public/icones/icon_youtube_gris.svg" alt="logo facebook"></a></li>
+            </ul>
+        </div>
+        <div class="footer__coryright">
+            <p class="footer__copy">
+                projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+            </p>
+            <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
+        </div>
+    </footer>
+</body>
+
+</html>

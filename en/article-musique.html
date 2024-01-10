@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Article Musique </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+            </a>
+    
+        </div>
+        <div class="header__end">
+            <div class="header__langue"></div>
+            <a href="/" class="header__langue--link">
+                <h5> FR</h5>
+            </a>
+            <a href="/" class="header__langue--link">
+                <h5>EN</h5>
+            </a>
+        </div>
+        </a>
+        <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+            <span class="menu-btn__bar"></span>
+        </div>
+        </div>
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <h4 class="menu_titre">Articles</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+                <li class="menu__item">
+                    <h4 class="menu_titre">Informations</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main>
+        <div class="titre">
+            <h1 class="title">Une Bande Originale Inoubliable</h1>
+            <div class="replica__iconebloc">
+                <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+            </div>
+        </div>
+        <p class="chapo">Explorez l'harmonie captivante qui anime "La Ligne Verte". La bande originale de ce film
+            légendaire, soigneusement
+            composée, se révèle être bien plus qu'une simple musique de fond. Plongez dans les mélodies envoûtantes
+            qui amplifient
+            les thèmes de rédemption, de compassion et de justice, et découvrez comment la musique transcende
+            l'écran pour devenir
+            un personnage à part entière dans cette aventure cinématographique.</p>
+        <h3 class="article__sub-title">Une Œuvre de Thomas Newman</h3>
+        <p class="article__paragraphe">La bande originale du film "La Ligne Verte", composée par Thomas Newman, est
+            bien plus qu'une simple musique de fond.
+            Elle est un chef-d'œuvre de la musique de film qui transcende l'écran pour devenir un personnage à part
+            entière dans
+            cette épopée cinématographique. À la fois émouvante, envoûtante et puissante, la musique de Thomas
+            Newman contribue de
+            manière significative à l'atmosphère du film.
+        </p>
+        <img class="article__img" src="/public/img/thomas-newman.webp" alt="Thomas newman">
+        <h6 class="article__img--description">Thomas Newman </h6>
+        <h3 class="article__sub-title">Thèmes Musicaux Évocateurs</h3>
+        <p class="article__paragraphe">Le thème de John Coffey, "The Thinny", est d'un autre registre, plus puissant
+            et mystérieux, à l'image des pouvoirs
+            extraordinaires de Coffey. Cette musique incarne la magie et le mystère qui entourent le personnage de
+            John Coffey, un
+            homme au destin exceptionnel. Chaque note de ce thème évoque la puissance extraordinaire de Coffey,
+            capable de guérir et
+            de soulager la souffrance des autres, malgré sa propre tragédie.
+        </p>
+        <img class="article__img" src="/public/img/870x489_cafe_2_garde.png" alt="John-Cafe-2-gardes">
+        <h6 class="article__img--description">John Cafe avec deux gardes</h6>
+        <h3 class="article__sub-title">Contraste avec le Thème de la Mort</h3>
+        <p class="article__paragraphe">En contraste, le thème de la mort, "Dead Man Walking", est sombre et
+            oppressant. Il reflète la gravité des moments où
+            les personnages sont confrontés à la mort, notamment lors de l'exécution de John Coffey. La musique
+            enveloppe ces scènes
+            de tristesse et de désespoir, renforçant ainsi l'impact émotionnel du film.</p>
+        <img class="article__img" src="/public/img/John-cafe-pleure.webp" alt="john pleure">
+        <h6 class="article__img--description">John cafe qui pleure  </h6>
+        <h3 class="article__sub-title">Une Interprétation Magistrale par un Orchestre Symphonique</h3>
+        <p class="article__paragraphe">L'interprétation de la bande originale par un orchestre symphonique, avec des
+            ajouts de cordes, de cuivres et de
+            percussions, est magistrale. Chaque instrument contribue à créer une atmosphère à la fois dramatique et
+            émouvante,
+            renforçant ainsi l'impact de chaque scène du film.
+        </p>
+        <h3 class="article__sub-title">Acclamations et Récompenses</h3>
+        <p class="article__paragraphe">La bande originale de "La Ligne Verte" a été acclamée à la fois par la
+            critique et le public. Elle a remporté un Golden
+            Globe de la meilleure musique de film et a été nominée pour un Oscar de la meilleure musique de film.
+            Ces distinctions
+            témoignent de l'impact durable de la musique de Thomas Newman sur l'expérience cinématographique.</p>
+        <h3 class="article__sub-title">Une Dimension Musicale Incontournable</h3>
+        <img class="article__img" src="/public/img/green-mile_tom-hanks-2.webp" alt="john pleure">
+        <h6 class="article__img--description">Paul Edgecomb dans une cellule de prison </h6>
+        <p class="article__paragraphe">En conclusion, la bande originale de "La Ligne Verte" est bien plus qu'une
+            simple accompagnatrice musicale. Elle est un
+            élément essentiel de l'émotion et de la profondeur du film. Les thèmes de compassion, de pouvoir
+            extraordinaire et de
+            mort résonnent dans l'âme du spectateur grâce à la musique magistrale de Thomas Newman. Cette bande
+            originale est un
+            incontournable pour les amoureux de musique de film et les fans de Stephen King, ajoutant une dimension
+            supplémentaire à
+            cette histoire captivante.
+        </p>
+        
+    </main>
+    <footer class="footer">
+        <a href="/fr/index.html">
+            <img class="footer__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+        </a>
+        <div class="footer__list">
+            <ul class="footer__list--1">
+                <li class="footer__item">
+                    <h4 class="footer__title">Articles</h4>
+                </li>
+                <li class="footer__item">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+            </ul>
+            <ul class="footer__list--2">
+                <li class="footer__item">
+                    <h4 class="footer__title">Informations</h4>
+                </li>
+            
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer__adresse">4 PI. Lucien Tharradin, 25200 Montbéliard</p>
+        <p class="footer__tel">03 81 99 47 34</p>
+        <p class="footer__email">angelo.bsti25@gmail.com</p>
+        <div class="footer__reseaux">
+            <h4 class="footer__h4">NOUS SUIVRE</h4>
+            <ul class="reseaux__list">
+                <li class="reseaux__item"><a href="https://www.facebook.com/dmalsot?locale=fr_FR"><img
+                            src="../public/icones/icon_facebook_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.instagram.com/iseeyou_officiel/"><img
+                            src="../public/icones/icon_instagram_gris.svg" alt="logo facebook"></a></li>
+                <li class="reseaux__item"><a href="https://www.youtube.com/@departementmmi4128"><img
+                            src="../public/icones/icon_youtube_gris.svg" alt="logo facebook"></a></li>
+            </ul>
+        </div>
+        <div class="footer__coryright">
+            <p class="footer__copy">
+                projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+            </p>
+            <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
+        </div>
+    </footer>
+</body>
+
+</html>

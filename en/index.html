@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>The Long Line accueil</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+            </a>
+
+        </div>
+        <div class="header__end">
+            <div class="header__langue"></div>
+                <a href="/" class="header__langue--link">
+                    <h5> FR</h5>
+                </a>
+                <a href="/" class="header__langue--link">
+                    <h5>EN</h5>
+                </a>
+            </div>
+            </a>
+            <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+                <span class="menu-btn__bar"></span>
+            </div>
+        </div>
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <h4 class="menu_titre">Articles</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+                <li class="menu__item">
+                    <h4 class="menu_titre">Informations</h4>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__span"></span>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article class="titre">
+            <h1 class="replica">Nous sommes tous promis à la mort, tous sans exceptions.</h1>
+            <h5 class="replica__name">Paul Edgecomb</h5>
+            <div class="replica__iconebloc">
+                <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
+            </div>
+        </article>
+        <p class="paragraphe">Bienvenue aux passionnés de Film et de littérature , Explorez un monde que vous allez
+            découvrir ou redécouvrir cette histoire intrigante et pleine d'émotion </p>
+        <article class="card">
+            <h2 class="card__title">Une adaptation culte</h2>
+            <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
+            <p class="card__texte">Découvrez le film 'La Ligne Verte', une adaptation du livre à succès de Stephen King
+                qui a connu un succès sans précédent.</p>
+            <a href="/fr/article-film.html"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg"
+                        alt="fleche button">
+                    <div class="card__btn--text">EN SAVOIR PLUS</div>
+                </button></a>
+        </article>
+        <article class="card">
+            <h2 class="card__title">Un Livre Splendide</h2>
+            <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
+            <p class="card__texte">Découvrez le livre 'La Ligne Verte', un livre à succès de Stephen King qui a marque
+                le monde de la littérature.</p>
+            <a href="/fr/article-livre.html"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg"
+                        alt="fleche button">
+                    <div class="card__btn--text">EN SAVOIR PLUS</div>
+                </button></a>
+        </article>
+        <article class="card">
+            <h2 class="card__title">Une Citation Philosophique</h2>
+            <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
+            <p class="card__texte">Découvrez le film 'La Ligne Verte', une adaptation du livre à succès de Stephen King
+                qui a connu un succès sans précédent.</p>
+            <a href="/"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg" alt="fleche button">
+                    <div class="card__btn--text">EN SAVOIR PLUS</div>
+                </button></a>
+        </article>
+        <article class="card">
+            <h2 class="card__title">Une Musique Transcendante</h2>
+            <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
+            <p class="card__texte">Découvrez le film 'La Ligne Verte', une adaptation du livre à succès de Stephen
+                Kingqui aconnu un succès sans précédent.</p>
+            <a href="/"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg" alt="fleche button">
+                    <div class="card__btn--text">EN SAVOIR PLUS</div>
+                </button></a>
+        </article>
+        <article class="card">
+            <h2 class="card__title">Un Réalisateur de Renon</h2>
+            <img class="card__image" src="../public/img/John_Cafe_Cine.png" alt="Image card 1">
+            <p class="card__texte">Découvrez le film 'La Ligne Verte', une adaptation du livre à succès de Stephen
+                Kingqui aconnu un succès sans précédent.</p>
+            <a href="/"><button class="card__btn"><img src="../public/icones/arrowLine-1.svg" alt="fleche button">
+                    <div class="card__btn--text">EN SAVOIR PLUS</div>
+                </button></a>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <a href="/fr/index.html">
+            <img class="footer__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
+        </a>
+        <div class="footer__list">
+            <ul class="footer__list--1">
+                <li class="footer__item">
+                    <h4 class="footer__title">Articles</h4>
+                </li>
+                <li class="footer__item">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-film.html">Film</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-livre.html">Livre</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-musique.html">Musique</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-citation.html">Citation</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/article-realisateur.html">Réalisateur</a>
+                </li>
+            </ul>
+            <ul class="footer__list--2">
+                <li class="footer__item">
+                    <h4 class="footer__title">Informations</h4>
+                </li>
+            
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/contact.html">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/autres-projets.html">Autres Projets</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/about.html">à Propos</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__coryright">
+            <p class="footer__copy">
+                projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+            </p>
+            <img class="footer__mmi" src="../public/icones/MMI_logo_white.png" alt="logo mmi">
+        </div>
+    </footer>
+</body>
+
+</html>
