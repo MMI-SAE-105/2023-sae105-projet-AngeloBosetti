@@ -31,6 +31,7 @@ ordre d'import :
 @import "component/titre.css";
 @import "component/contact.css";
 @import "component/article.css";
+@import "component/frise.css";
 
 @font-face {
     font-family:"OPTICopperplate";

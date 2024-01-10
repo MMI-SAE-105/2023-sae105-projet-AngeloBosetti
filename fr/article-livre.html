@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"  x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
             <a href="/fr/index.html">
                 <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
             </a>
-    
+
         </div>
         <div class="header__end">
             <div class="header__langue"></div>
@@ -26,10 +26,10 @@
             <a href="/" class="header__langue--link">
                 <h5>EN</h5>
             </a>
-            </div>
-            <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
-                <span class="menu-btn__bar"></span>
-            </div>
+        </div>
+        <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+            <span class="menu-btn__bar"></span>
+        </div>
         </div>
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list">
@@ -74,26 +74,24 @@
                 </li>
             </ul>
         </nav>
-    
+
     </header>
     <main>
         <div class="titre">
-            <div class="titre">
-                <h1 class="title">Un Roman Inévitable de Stephen King</h1>
-                <div class="replica__iconebloc">
-                    <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
-                </div>
+            <h1 class="title">Un Roman Inévitable de Stephen King</h1>
+            <div class="replica__iconebloc">
+                <img class="replica__icone" src="../public/icones/arrow_down.svg" alt="arrow down">
             </div>
         </div>
         <p class="chapo">Plongez dans l'univers fascinant de "La Ligne Verte," le chef-d'œuvre littéraire de Stephen
-                King. À travers des thèmes
-                universels tels que la rédemption, la compassion et la justice, ce roman explore la complexité de l'âme
-                humaine.
-                Découvrez comment l'auteur maître du suspense tisse une histoire captivante qui nous pousse à réfléchir
-                sur l'essence de
-                notre humanité.
+            King. À travers des thèmes
+            universels tels que la rédemption, la compassion et la justice, ce roman explore la complexité de l'âme
+            humaine.
+            Découvrez comment l'auteur maître du suspense tisse une histoire captivante qui nous pousse à réfléchir
+            sur l'essence de
+            notre humanité.
         </p>
-        
+
         <h3 class="article__sub-title">Une Plongée dans l'univers carcéral de 1932 en Louisiane</h3>
         <p class="article__paragraphe">"La Ligne Verte" est un roman incontournable de la littérature fantastique,
             publié en 1996 par le célèbre écrivain
@@ -111,6 +109,8 @@
             permettent
             de guérir les malades et de soulager la souffrance.
         </p>
+        <img class="article__img" src="/public/img/John-Cafe-2-gardes-dessin.webp" alt="John Gardes">
+        <h6 class="article__img--description">Dessin de John Cafe avec des gardes</h6>
         <h3 class="article__sub-title">Thèmes Profonds et Universels: Rédemption, Compassion et Justice</h3>
         <p class="article__paragraphe">À travers cette histoire fascinante, Stephen King explore plusieurs thèmes
             profonds et universels. L'un des thèmes
@@ -120,6 +120,8 @@
             central du
             roman, soulignant l'importance d'accorder une seconde chance aux âmes les plus désespérées.
         </p>
+        <img class="article__img" src="/public/img/la-ligne-verte_Jonh_Paul.webp" alt="Paul Edgecomb et John">
+        <h6 class="article__img--description">Paul Edgecomb et John Cafe en dessin</h6>
         <h3 class="article__sub-title">Questionnements sur la Justice et Redéfinition des Conceptions</h3>
         <p class="article__paragraphe">Le thème de la justice est également abordé de manière complexe. Le roman amène
             les lecteurs à réfléchir sur la peine de
@@ -133,6 +135,8 @@
             richesse
             narrative.
         </p>
+        <img class="article__img" src="/public/img/couverture-roman-la-ligne-verte.webp" alt="Roman">
+        <h6 class="article__img--description">Courverture du roman La Ligne Verte</h6>
         <h3 class="article__sub-title">L'Adaptation Cinématographique et son Impact Émotionnel</h3>
         <p class="article__paragraphe">En 1999, "La Ligne Verte" a été adaptée au cinéma par le réalisateur Frank
             Darabont. L'adaptation cinématographique a
@@ -152,43 +156,41 @@
             large, confirmant ainsi sa place parmi les classiques de la littérature et du cinéma. Une œuvre à ne pas
             manquer pour
             les amoureux de récits poignants et</p>
-        <h3 class="carrousel_title">La liste des livres de Stephen King</h3>
         <article>
-                <div class="">
-                    <div class="frise__image">
-                        <div id="ecran-1" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
-                                <figcaption>Ecran 1</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-2" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
-                                <figcaption>Ecran 2</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-3" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
-                                <figcaption>Ecran 3</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-4" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
-                                <figcaption>Ecran 4</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-5" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
-                                <figcaption>Ecran 5</figcaption>
-                            </figure>
-                        </div>
-                    </div>
+            <div class="frise__livre">
+                <h2 class="frise_title">Frise des livres de Stephen King</h2>
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img class="livre__image" src="/public/img/livre-shining.webp" alt="image ecran 1">
+                        <h4 class="livre__titre">Shining - 1977</h4>
+                    </figure>
                 </div>
-            </article>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img class="livre__image" src="/public/img/Livre-Christine.webp" alt="image ecran 2">
+                        <h4 class="livre__titre">Christine - 1983</h4>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img class="livre__image" src="/public/img/Livre-Misery.webp" alt="image ecran 3">
+                        <h4 class="livre__titre">Misery - 1990</h4>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img class="livre__image" src="/public/img/Livre-Jessie.webp" alt="image ecran 4">
+                        <h4 class="livre__titre">Jessie - 1992</h4>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img class="livre__image" src="/public/img/Livre-1922.webp" alt="image ecran 5">
+                        <h4 class="livre__titre">1922 - 2010</h4>
+                    </figure>
+                </div>
+            </div>
+        </article>
     </main>
     <footer class="footer">
         <a href="/fr/index.html">
@@ -221,7 +223,7 @@
                 <li class="footer__item">
                     <h4 class="footer__title">Informations</h4>
                 </li>
-            
+
                 <li class="footer__item">
                     <a class="footer__link" href="/fr/contact.html">Contact</a>
                 </li>
