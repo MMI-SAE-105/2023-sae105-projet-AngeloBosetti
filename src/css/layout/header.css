@@ -4,7 +4,7 @@
   z-index: 15;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: row; 
   top: 0;
   left: 0;
   max-width: 100%;
@@ -24,13 +24,13 @@
   z-index: 20;
 }
 
-.header__langue , h3 {
+.header__langue {
   position: relative;
+  color: var(--white);
+  font-size: var(--text--xl);
   display: block;
-  margin: 0 auto;
-  padding: 0;
   height: 17px;
-  width: 40px;
+  width: 60px;
   z-index: 20;
 
 }

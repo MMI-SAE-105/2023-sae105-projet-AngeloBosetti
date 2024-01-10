@@ -23,10 +23,9 @@
     height: 100%;
 }
 
-.menu__title h4 {
+.menu__title h4{
     color: var(--white);
     font-size: var( --title--lg);
-    margin-bottom: 5%;
 }
 
 .menu__link {
