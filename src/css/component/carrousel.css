@@ -1,0 +1,80 @@
+
+* {
+    /* change le box model */
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    color: #000000;
+}
+img {
+      /* image responsive, largeur maxi */
+      max-width: 100%;
+      /* hauteur "auto" */
+      height: auto;
+}
+.carrousel_parent-ecrans {
+      /* aligne horizontalement les enfants */
+      display: flex;
+      /* largeur du parent */
+      width: 100%;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+    
+}
+.carrousel_ecran {
+      /* largeur du parent pour chaque enfant */
+      width: 100%;
+      /* permet de garder toute la largeur du parent */
+      flex: none;
+      scroll-snap-align: start;
+}
+.carrousel_ecran figure {
+      /* enlève les marges par défaut */
+      margin: 0;
+}
+.carrousel {
+    position: relative;
+}
+  
+.carrousel_btn {
+    position: absolute;
+    top: 50%;
+    top: calc(
+      min(500px, 100vw) / 16 * 9 / 2 + 1rem
+    ); /* centre verticalement ~50% vertical */
+    transform: translateY(-50%); /* methode du point mort */
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #fff;
+}
+  
+.carrousel_btn-avant {
+    left: 0;
+}
+  
+.carrousel_btn-apres {
+    right: 0;
+}
+.caroussel_liste-liens {
+    display: flex; /* aligne horizontalement les enfants */
+    justify-content: center; /* centre horizontalement les enfants */
+    margin: 0; /* enlève les marges par défaut */
+    padding: 0; /* enlève les padding par défaut */
+    list-style-type: none; /* enlève les puces par défaut */
+    gap: 1rem; /* espace entre les enfants */
+  }
+a.caroussel_lien.actif {
+    /* couleur du texte */
+    color: #c2b447;
+    /* couleur du fond */
+    background-color: #3a48b5;
+}

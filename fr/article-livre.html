@@ -13,14 +13,14 @@
 <body>
     <header class="header">
         <div class="header__start">
-            <a href="/">
+            <a href="/fr/index.html">
                 <img class="header__logo" src="../public/icones/The_Long_Line_Logo_Blanc.svg" alt="Logo The Long Line">
             </a>
     
         </div>
         <div class="header__end">
             <a href="/" class="header__langue">
-                <h3>FR EN</h3>
+                <h5> FR EN</h5>
             </a>
             <div class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
                 <span class="menu-btn__bar"></span>
@@ -29,7 +29,7 @@
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <h4 class="menu_title">Articles</h4>
+                    <h4 class="menu_titre">Articles</h4>
                 </li>
                 <li class="menu__item">
                     <span class="menu__span"></span>
@@ -50,7 +50,7 @@
                     <a class="menu__link" href="/fr/article-realisateur.html">Réalisateur</a>
                 </li>
                 <li class="menu__item">
-                    <h4 class="menu_title">Informations</h4>
+                    <h4 class="menu_titre">Informations</h4>
                 </li>
                 <li class="menu__item">
                     <span class="menu__span"></span>
@@ -145,18 +145,6 @@
         <h3 class="carrousel_title">La liste des livres de Stephen King</h3>
         <article>
             <div class="work" x-data="{hrefCourant:'#ecran-1',}">
-                <button @click="parent = $refs.parent,parent.scrollLeft -= parent.clientWidth"
-                    class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
-                </button><button @click="parent = $refs.parent,parent.scrollLeft += parent.clientWidth"
-                    class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-                <div class="carrousel_parent-ecrans" x-ref="parent"
-                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-        
-        <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-            <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
-                aria-label="slide précedant">
-                << /button><button @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth"
-                        class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
                     <div class="carrousel_parent-ecrans" x-ref="parent"
                         @scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                         <div id="ecran-1" class="carrousel_ecran">
