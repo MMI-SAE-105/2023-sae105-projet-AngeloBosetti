@@ -35,8 +35,8 @@ ordre d'import :
 
 @font-face {
     font-family:"OPTICopperplate";
-    src: url("../fonts/OPTICopperplate.woff2") format("woff2");}
+    src: url("/src/fonts/AnyConv.com_OPTICopperplate.woff2") format("woff2");}
 
 @font-face {
     font-family:"Avenir_LT_Pro";
-    src: url("../fonts/Avenir_LT_Pro_35_Light.woff2") format("woff2");}
+    src: url("/src/fonts/Avenir_LT_Pro_35_Light.woff2") format('woff2');}
